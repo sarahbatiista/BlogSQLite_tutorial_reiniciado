@@ -45,15 +45,18 @@ o segundo são os dados que serão enviados ao cliente (RESULT - 'res') */
 app.get("/", (req, res) => {
   //Rota raiz do meu servidor, acesse o browser com o endereço http://localhost:8000/
   /*res.send(index);*/
+  console.log("GET /index");
   res.render("index");
 });
 
 app.get("/sobre", (req, res) => {
+  console.log("GET /sobre");
   //Rota raiz do meu servidor, acesse o browser com o endereço http://localhost:8000/
-  res.send(sobre);
+  res.render("sobre");
 });
 
 app.get("/login", (req, res) => {
+  console.log("GET /login");
   // res.send(login);
   res.render("login");
 });
@@ -63,7 +66,8 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/cadastro", (req, res) => {
-  res.send(cadastro);
+  console.log("GET /cadastro");
+  res.render("cadastro");
 });
 
 app.post("/cadastro", (req, res) => {
