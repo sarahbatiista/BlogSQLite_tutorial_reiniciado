@@ -15,5 +15,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor sendo executado na porta  ${PORT}!`);
 });
-
-//tesye
