@@ -58,7 +58,7 @@ app.get("/usuarios", (req, res) => {
   });
 });
 
-// GET Cadastro
+// GET Cadastrooo
 app.get("/cadastro", (req, res) => {
   console.log("GET /cadastro");
   // Rota raiz do meu servidor, acesse o browser com o endereço http://localhost:8000/cadastro
